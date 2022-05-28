@@ -1,0 +1,171 @@
+@keyframes transitionIn {
+  from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+body {
+    background-color: #272725;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: x-large;
+    margin: 0px;
+    animation: transitionIn 1.5s;
+  }
+
+#container{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#testo {
+position: absolute;
+top: 250px;
+left: 210px;
+font-style: italic;
+color: rgba(0, 0, 0, 0.9);
+}
+
+#testo p{
+    position: absolute;
+    width: 550px;
+}
+
+#immagine img {
+  height: 98%;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 170px;
+}
+
+form{
+  box-shadow: 0px 0px 7px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  padding: 10px;
+  font-style: italic;
+}
+
+main {
+      display: flex;
+      justify-content: center;
+      }
+    
+p {
+      margin: 0.3em;
+  }
+    
+label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+input {
+      margin-left: 0.5em;
+      border-radius: 6px;
+      font-family: 'Radio Canada', sans-serif;
+      background: #f4ede5;
+      padding: 8px;
+      border: 2px solid #f4ede5;; 
+      transition: border ease 0.3s;
+    }
+  
+.signup {
+    display: flex;
+    font-size: large;
+    justify-content: center;
+  }
+  
+  .signup a{
+    font-style: italic;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    margin-left: 6px;
+  }
+
+  .sotto{
+    opacity: 0;
+    font-size: 11px;
+    transition: opacity 0.3s ease;
+}
+  
+  .errorj label {
+    color: #fa1c2c;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 11px;
+    color: #fa1c2c;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+
+@media (max-width: 1290px) {
+  #form{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1220px) {
+  #immagine img{
+    width: 25em;
+  }
+}
+@media (max-width: 1100px) {
+  #immagine img{
+    width: 20em;
+  }
+  #testo{
+    left:130px;
+    font-size: large;
+  }
+}
+@media (max-width: 890px) {
+  #immagine img{
+   display: none;
+  }
+  #testo{
+    left:260px;
+    top:600px;
+    font-size: small;
+  }
+  #form{
+    margin-left: 150px;
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 550px) {
+  #testo{
+    left:50px;
+    top:600px;
+    font-size: x-small;
+  }
+  #form{
+    margin-left: 0px;
+  }
+}

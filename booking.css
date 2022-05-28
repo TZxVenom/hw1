@@ -1,0 +1,209 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    background-color: #272725;
+    color: #fff;
+    animation: transitionIn 1.0s;
+    
+}
+
+header{
+    height: 100px;
+}
+
+nav {  
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links {
+    font-family: 'Radio Canada', sans-serif;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.links a{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.links #benvenuto{
+    cursor: auto;
+    font-size: large;
+    padding: 10px;
+}
+
+#primo {
+    position: absolute;
+    padding: 20px;
+    top: 70px;
+    left: 45px;
+    align-items: center;
+    }
+    
+    #primo h1{
+        font-family: 'Radio Canada', sans-serif;
+        font-size: xxx-large;
+    }
+    
+    .sinistra {
+        position: absolute;
+        top:  0px;
+        left: 15px;
+        font-size: 20px;
+        padding: 20px;
+        letter-spacing: 3px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .sinistra a {
+        color:white;
+        text-decoration: none;
+        font-family: 'Radio Canada', sans-serif;
+        font-style: oblique;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: x-large;
+    }
+    
+    .container {
+        display: flex;
+        margin-top: 60px;
+        margin-right: 15px;
+        margin-bottom: 100px;
+        font-family: 'Radio Canada', sans-serif;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: end;
+        margin-top: 10px;
+        position: relative;
+        top:40px;
+    }
+      
+    footer .sinistra{
+        left:auto;
+    }
+
+.titolo {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.contenuto{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h2{
+    margin-bottom: 0px;
+    font-style: oblique;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camera,.check-in,.check-out,.persone,.numero_camere {
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-label {
+    display: block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.input,
+.options {
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#submit {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+  }
+
+  .sotto{
+    opacity: 0;
+    font-size: 11px;
+    transition: opacity 0.3s ease;
+}
+  
+  .errorj label {
+    color: #fa1c2c;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 16px;
+    color: #fa1c2c;
+}
+
+@media (max-width: 1100px) {
+    .sinistra {
+        position: unset;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 760px) {
+    .titolo {
+        font-size: large;
+    }
+}
+
+@media (max-width: 550px) {
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container {
+        margin-top: 150px;
+    }
+}

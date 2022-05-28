@@ -1,0 +1,223 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    background-color: #272725;
+    color: #fff;
+}
+
+header {
+    height: 500px;
+    }
+
+nav {  
+    font-size: 14px;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    animation: transitionIn 2.0s;
+}
+
+.links {
+    font-family: 'Radio Canada', sans-serif;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.links a{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.links #benvenuto{
+    cursor: auto;
+    font-size: large;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#prima{
+    margin-top: -420px;
+    margin-left: 35px;
+}
+#seconda{
+    margin-left: 35px;
+}
+
+#prima div {
+padding: 20px;
+animation: transitionIn 1.5s;
+}
+
+#prima h1{
+    font-family: 'Radio Canada', sans-serif;
+    font-size: xxx-large;
+}
+
+.sinistra {
+     padding: 20px;
+     width: fit-content;
+}
+.sinistra a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 100px;
+    font-family: 'Radio Canada', sans-serif;
+    padding: 20px;
+    animation: transitionIn 2.0s;
+}
+
+#prima .container img {
+     max-width: 90vw;
+     max-height: 100vh;
+}
+
+#seconda .container img {
+    max-width: 55vw; 
+    max-height: 85vh;
+}
+
+#quarta{
+    margin-left: 35px;
+}
+
+#quarta .container img {
+    max-width: 55vw; 
+    max-height: 85vh;
+}
+
+.contenuto {     
+    text-align: center;
+    font-size: large;
+}
+
+.container_reversed .contenuto{
+    margin-top: 200px;
+    margin-right: 20px;
+}
+.container h2{
+    margin-top: 200px;
+}
+
+.container_reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-family: 'Radio Canada', sans-serif;
+    padding: 20px;
+}
+
+.container_reversed img {
+    display: flex;
+    max-width: 55vw;
+    max-height: 700px;
+}
+
+#overlay{
+    height: 200px;
+    padding: 60px;
+    text-align: center;
+    background-color: #447884;
+    font-family: 'Radio Canada', sans-serif;
+    font-style: italic;
+}
+#overlay h1{
+    margin-top: 50px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    font-family: 'Radio Canada', sans-serif;
+    text-transform: uppercase;   
+    padding: 40px;
+}
+.button a{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: end;
+    margin-top: 10px;
+    position: relative;
+    top:40px;
+  }
+
+footer .sinistra {
+    left:auto;  
+}
+
+.space {
+    white-space: pre-wrap;
+}
+
+@media (max-width: 1285px){
+    nav{
+        flex-direction: column;
+    }
+    #benvenuto {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .links {
+        display: flex;
+    }
+}
+
+@media (max-width: 825px) {
+    #prima .container img {
+        max-width: 70vw;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .contenuto {
+        font-size: medium;
+    }
+    #seconda .container img {
+        max-width: 30vw;
+    }
+    #terza .container_reversed img {
+        max-width: 30vw;
+    }
+    #quarta .container img {
+        max-width: 30vw;
+    }
+    #prima h1 {
+        display: none;
+    }
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container {
+        margin-top: 120px;
+    }
+    
+}

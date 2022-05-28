@@ -1,0 +1,134 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    background-color: #272725;
+    color: #fff;
+}
+
+header {
+    height: 300px;
+    }
+
+nav {  
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    animation: transitionIn 2.0s;
+}
+
+.links {
+    font-family: 'Radio Canada', sans-serif;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.links a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.centro{
+    font-size: large;
+    margin-right: 260px;
+}
+
+.sinistra {
+    position: absolute;
+    top:  0px;
+    left: 45px;
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 3px;
+    justify-content: space-between;
+}
+
+.sinistra a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: end;
+    position: relative;
+    top:150px;
+}
+  
+footer .sinistra{
+    left:auto;
+}
+
+#prima {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 220px;
+}
+
+table { 
+    display: flex;
+    font-family: 'Radio Canada', sans-serif;
+    border: 5px solid #fff;
+    font-size: large;
+    animation: transitionIn 2.0s;
+}
+
+.riga {
+color: #447884;
+letter-spacing: 1px;
+padding: 10px;
+font-style: oblique;
+}
+
+@media (max-width: 1285px){
+    nav{
+        flex-direction: column;
+    }
+    #prima{
+    justify-content: unset;
+    }
+   table{
+       font-size: medium;
+   }
+   .riga {
+       display: flex;
+   }
+   th {
+       display: flex;
+   }
+    #benvenuto {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sinistra{
+        position: unset;
+    }
+}
